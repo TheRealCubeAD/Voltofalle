@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>10</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1280</x>
-      <y>440</y>
-      <w>490</w>
-      <h>190</h>
+      <x>744</x>
+      <y>408</y>
+      <w>294</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>&lt;&lt;&gt;&gt;
 Package::Voltogame
-VIEW
+View
 --
-
+private Control control
 --
-
+public View(Control c)
+public void update(Observable o, Object arg)
 --
 Responsibilities
 -- Verwaltet GUI
@@ -26,18 +27,18 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>730</x>
-      <y>60</y>
-      <w>490</w>
-      <h>190</h>
+      <x>414</x>
+      <y>180</y>
+      <w>294</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>&lt;&lt;main&gt;&gt;
 Package::Voltogame
-CONTROL
+Control
 --
-
+private Model model
 --
-
+public Control()
 --
 Responsibilities
 -- Kontrolliert Model und View
@@ -47,16 +48,16 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>430</y>
-      <w>490</w>
-      <h>190</h>
+      <x>90</x>
+      <y>402</y>
+      <w>294</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>&lt;&lt;&gt;&gt;
 Package::Voltogame
-MODEL
+Model
 --
-
+public Model()
 --
 
 --
@@ -68,10 +69,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1210</x>
-      <y>140</y>
-      <w>350</w>
-      <h>320</h>
+      <x>702</x>
+      <y>228</y>
+      <w>210</w>
+      <h>192</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -84,14 +85,30 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
-      <y>150</y>
-      <w>330</w>
-      <h>300</h>
+      <x>228</x>
+      <y>228</y>
+      <w>198</w>
+      <h>186</h>
     </coordinates>
     <panel_attributes>lt=-
-m1=0..n
-m2=0..1</panel_attributes>
-    <additional_attributes>310.0;10.0;10.0;10.0;10.0;280.0</additional_attributes>
+m1=0
+m2=1
+
+&lt; Steuert</panel_attributes>
+    <additional_attributes>310.0;20.0;10.0;20.0;10.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>378</x>
+      <y>450</y>
+      <w>378</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+&lt; beobachtet</panel_attributes>
+    <additional_attributes>10.0;20.0;610.0;20.0</additional_attributes>
   </element>
 </diagram>

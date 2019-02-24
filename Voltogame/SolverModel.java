@@ -1,4 +1,4 @@
-public class SolverModel{
+public class SolverModel extends Model{
 
     public SolverModel(){
         super()

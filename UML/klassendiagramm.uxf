@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>8</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1040</x>
-      <y>304</y>
-      <w>432</w>
-      <h>152</h>
+      <x>2037</x>
+      <y>266</y>
+      <w>378</w>
+      <h>133</h>
     </coordinates>
     <panel_attributes>View
 --
@@ -25,10 +25,10 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
+      <x>1687</x>
       <y>0</y>
-      <w>392</w>
-      <h>152</h>
+      <w>343</w>
+      <h>133</h>
     </coordinates>
     <panel_attributes>Control
 --
@@ -44,28 +44,38 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>208</x>
-      <y>296</y>
-      <w>392</w>
-      <h>152</h>
+      <x>441</x>
+      <y>371</y>
+      <w>343</w>
+      <h>189</h>
     </coordinates>
     <panel_attributes>Model
+{abstract}
 --
-public Model()
+private int[][] cards
+private int[] indicators
 --
+public super()
+
+public abstract userAction(Action a)
+
+private abstract int[][] generateMatrix()
+private abstract int[] generatrIndicators()
+private abstract void update()
+private abstract Msg generateMsg()
 
 --
 Responsibilities
--- Berechnet die Spieldaten</panel_attributes>
+-- Stellt Grundgerüst für die Models bereit</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1024</x>
-      <y>64</y>
-      <w>360</w>
-      <h>256</h>
+      <x>2023</x>
+      <y>56</y>
+      <w>315</w>
+      <h>224</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -78,39 +88,39 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>64</y>
-      <w>264</w>
-      <h>248</h>
+      <x>819</x>
+      <y>42</y>
+      <w>882</w>
+      <h>749</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0
-m2=1
+m2=0, 1
 
 &lt; Steuert</panel_attributes>
-    <additional_attributes>310.0;20.0;10.0;20.0;10.0;290.0</additional_attributes>
+    <additional_attributes>1240.0;20.0;10.0;20.0;10.0;1050.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>592</x>
-      <y>360</y>
-      <w>464</w>
-      <h>40</h>
+      <x>868</x>
+      <y>301</y>
+      <w>1183</w>
+      <h>490</h>
     </coordinates>
     <panel_attributes>lt=-
-m1=1
-m2=1
+m1=0
+m2=0,1
 &lt; beobachtet</panel_attributes>
-    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
+    <additional_attributes>1670.0;20.0;10.0;20.0;10.0;680.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1608</x>
-      <y>576</y>
-      <w>240</w>
-      <h>152</h>
+      <x>2534</x>
+      <y>504</y>
+      <w>210</w>
+      <h>133</h>
     </coordinates>
     <panel_attributes>Screen
 {abstract}
@@ -126,10 +136,10 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>784</x>
-      <y>936</y>
-      <w>232</w>
-      <h>224</h>
+      <x>1813</x>
+      <y>819</y>
+      <w>203</w>
+      <h>196</h>
     </coordinates>
     <panel_attributes>MainmenuScreen
 --
@@ -151,10 +161,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>920</x>
-      <y>720</y>
-      <w>776</w>
-      <h>232</h>
+      <x>1932</x>
+      <y>630</y>
+      <w>679</w>
+      <h>203</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>950.0;10.0;10.0;270.0</additional_attributes>
@@ -162,10 +172,10 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1048</x>
-      <y>936</y>
-      <w>256</w>
-      <h>224</h>
+      <x>2044</x>
+      <y>819</y>
+      <w>224</w>
+      <h>196</h>
     </coordinates>
     <panel_attributes>GameScreen
 --
@@ -190,10 +200,10 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1336</x>
-      <y>936</y>
-      <w>256</w>
-      <h>224</h>
+      <x>2296</x>
+      <y>819</y>
+      <w>224</w>
+      <h>196</h>
     </coordinates>
     <panel_attributes>SolverScreen
 --
@@ -214,10 +224,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1192</x>
-      <y>720</y>
-      <w>512</w>
-      <h>232</h>
+      <x>2170</x>
+      <y>630</y>
+      <w>448</w>
+      <h>203</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>620.0;10.0;10.0;270.0</additional_attributes>
@@ -225,10 +235,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1472</x>
-      <y>720</y>
-      <w>240</w>
-      <h>232</h>
+      <x>2415</x>
+      <y>630</y>
+      <w>210</w>
+      <h>203</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>280.0;10.0;10.0;270.0</additional_attributes>
@@ -236,10 +246,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>896</x>
-      <y>448</y>
-      <w>184</w>
-      <h>504</h>
+      <x>1911</x>
+      <y>392</y>
+      <w>161</w>
+      <h>441</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -251,10 +261,10 @@ gibt Eingaben ^
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1648</x>
-      <y>344</y>
-      <w>96</w>
-      <h>64</h>
+      <x>2569</x>
+      <y>301</y>
+      <w>84</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>JPanel
 --
@@ -264,10 +274,10 @@ gibt Eingaben ^
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1464</x>
-      <y>368</y>
-      <w>200</w>
-      <h>24</h>
+      <x>2408</x>
+      <y>322</y>
+      <w>175</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>230.0;10.0;10.0;10.0</additional_attributes>
@@ -275,10 +285,10 @@ gibt Eingaben ^
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1680</x>
-      <y>400</y>
-      <w>24</w>
-      <h>192</h>
+      <x>2597</x>
+      <y>350</y>
+      <w>21</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
@@ -286,10 +296,10 @@ gibt Eingaben ^
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1168</x>
-      <y>448</y>
-      <w>144</w>
-      <h>504</h>
+      <x>2149</x>
+      <y>392</y>
+      <w>126</w>
+      <h>441</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -302,10 +312,10 @@ gibt Eingaben ^
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1448</x>
-      <y>448</y>
-      <w>104</w>
-      <h>504</h>
+      <x>2394</x>
+      <y>392</y>
+      <w>91</w>
+      <h>441</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -318,10 +328,10 @@ gibt Eingaben ^
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>1312</y>
-      <w>256</w>
-      <h>152</h>
+      <x>1708</x>
+      <y>1407</y>
+      <w>224</w>
+      <h>133</h>
     </coordinates>
     <panel_attributes>Indicator
 --
@@ -337,10 +347,10 @@ Responsibilities
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1096</x>
-      <y>1312</y>
-      <w>176</w>
-      <h>160</h>
+      <x>2086</x>
+      <y>1407</y>
+      <w>154</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>Grid
 --
@@ -361,10 +371,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1168</x>
-      <y>1152</y>
-      <w>80</w>
-      <h>176</h>
+      <x>2107</x>
+      <y>1008</y>
+      <w>70</w>
+      <h>413</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -372,29 +382,29 @@ m2=1
 gibt Werte \/
 
 </panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;570.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>920</x>
-      <y>1376</y>
-      <w>192</w>
-      <h>40</h>
+      <x>1925</x>
+      <y>1463</y>
+      <w>175</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=10
-gibt Werte &gt;</panel_attributes>
-    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
+&lt; gibt Werte</panel_attributes>
+    <additional_attributes>230.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1376</x>
-      <y>1312</y>
-      <w>176</w>
-      <h>160</h>
+      <x>2331</x>
+      <y>1407</y>
+      <w>154</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>Grid
 --
@@ -416,10 +426,10 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1456</x>
-      <y>1152</y>
-      <w>88</w>
-      <h>176</h>
+      <x>2443</x>
+      <y>1008</y>
+      <w>77</w>
+      <h>413</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -428,15 +438,15 @@ gibt Werte ^
 gibt Werte \/
 
 </panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;570.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1712</x>
-      <y>1312</y>
-      <w>256</w>
-      <h>152</h>
+      <x>2618</x>
+      <y>1407</y>
+      <w>224</w>
+      <h>133</h>
     </coordinates>
     <panel_attributes>Indicator
 --
@@ -453,24 +463,24 @@ Responsibilities
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1544</x>
-      <y>1376</y>
-      <w>184</w>
-      <h>40</h>
+      <x>2478</x>
+      <y>1463</y>
+      <w>154</w>
+      <h>35</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=10
 &lt; gibt Werte</panel_attributes>
-    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1520</x>
-      <y>16</y>
-      <w>288</w>
-      <h>112</h>
+      <x>2457</x>
+      <y>14</y>
+      <w>252</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>Todo Morgen:
 Model modellieren
@@ -479,5 +489,249 @@ Welche Methoden werden dafür benötigt?
 
 bg=blue</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>903</x>
+      <y>665</y>
+      <w>91</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>c  , c , c , c , c | i0
+c  , c , c , c , c | i1
+c  , c , c , c , c | i2
+c  , c , c , c , c | i3
+c  , c , c , c , c | i4
+i9 , i8, i7, i6, i5
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>2247</x>
+      <y>1309</y>
+      <w>91</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>c  , c , c , c , c | i0
+c  , c , c , c , c | i1
+c  , c , c , c , c | i2
+c  , c , c , c , c | i3
+c  , c , c , c , c | i4
+i9 , i8, i7, i6, i5
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2198</x>
+      <y>1113</y>
+      <w>168</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>Action
+--
+private int[][] action
+private int[] input
+--
+public Action(int[][] a)
+public Action(int[] i)
+
+public int[][] getAction()
+public int[] getInput()
+--
+Responsibilities
+-- Transportiert alle relevanten
+   Nutzereingaben</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>847</x>
+      <y>1267</y>
+      <w>168</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>Msg
+--
+private int[][]cards
+private int[] indicators
+private int score
+--
+public Msg(int[][] c, int[] i, int s)
+public int[][] getCards()
+public int[] getIndicators()
+public int getScore()
+--
+Responsibilities
+-- Transportiert alle relevanten Werte
+   in einem Objekt zum View</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2212</x>
+      <y>1008</y>
+      <w>91</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+\/ gibt Eingaben</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2338</x>
+      <y>1008</y>
+      <w>91</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+\/ gibt Eingaben</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>728</x>
+      <y>1120</y>
+      <w>133</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0
+gibtWerte &gt;</panel_attributes>
+    <additional_attributes>170.0;310.0;10.0;310.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>966</x>
+      <y>777</y>
+      <w>343</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>SolverModel
+--
+private int[][] cards
+private int[] indicators
+--
+public SolverModel()
+
+private int[][] generateMatrix()
+private int[] generateIndicators()
+
+public userAction(Action a)
+private void update()
+private Msg generateMsg()
+
+--
+Responsibilities
+-- Berechnet die Spieldaten</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>777</y>
+      <w>343</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>GameModel
+--
+private int[][] cards
+private int[] indicators
+private int score
+--
+public GameModel()
+
+private int[][] generateMatrix()
+private int[] generateIndicators()
+
+public userAction(Action a)
+private void update()
+private Msg generateMsg()
+
+--
+Responsibilities
+-- Berechnet die Spieldaten</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>602</x>
+      <y>553</y>
+      <w>21</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1036</x>
+      <y>77</y>
+      <w>665</w>
+      <h>714</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0
+m2=0, 1
+
+&lt; Steuert</panel_attributes>
+    <additional_attributes>930.0;20.0;10.0;20.0;10.0;1000.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1162</x>
+      <y>336</y>
+      <w>889</w>
+      <h>455</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0
+m2=0,1
+&lt; beobachtet</panel_attributes>
+    <additional_attributes>1250.0;20.0;10.0;20.0;10.0;630.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>553</y>
+      <w>399</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;550.0;70.0;550.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1008</x>
+      <y>1120</y>
+      <w>147</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0
+gibtWerte &gt;</panel_attributes>
+    <additional_attributes>10.0;310.0;180.0;310.0;180.0;10.0</additional_attributes>
   </element>
 </diagram>

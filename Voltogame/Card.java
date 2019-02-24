@@ -16,4 +16,7 @@ public class Card{
         return this.revealed;
     }
 
+    public void reveal(){
+        this.revealed = true;
+    }
 }

@@ -8,7 +8,7 @@ public class SolverModel extends Model{
         // Die Indikatoren werden vom Nutzer angegeben
     }
 
-    public void generateMatric(){
+    public void generateMatrix(){
         // Die bereits aufgedeckten Karten werden vom Nutzer angegeben.
         // Die noch umgedrehten Karten sind im allgemeinen Fall noch nicht genau bestimmt.
     }

@@ -13,7 +13,7 @@ public class Model extends Observable {
     i9 , i8, i7, i6, i5
      */
     private Card[][] cards;
-    // indicators[i] = ( points, voltoSum )
+    // indicators[i] = ( pointsSum, voltoSum )
     private int[][] indicators;
 
     public Model(){

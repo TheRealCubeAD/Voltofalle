@@ -34,6 +34,10 @@ public class View extends JFrame implements Observer {
         control.menuButtonClicked(a);
     }
 
+    public void gridButtonClicked(int[] i){
+        control.gridButtonClicked(i);
+    }
+
     @Override
     public void update(Observable o, Object arg) {
         switch (o.toString()){
@@ -58,6 +62,16 @@ public class View extends JFrame implements Observer {
                         break;
                     default:
                         System.out.println("WTF?");
+                }
+                break;
+            case "Model":
+                System.out.println("Update from Model!");
+                for (Component component : panel.getComponents()){
+                    if (component.isVisible()){
+                        Screen s = (Screen) component;
+                        System.out.println(s.toString());
+                        s.updateData((Msg) arg);
+                    }
                 }
                 break;
             default:

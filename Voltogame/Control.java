@@ -1,13 +1,16 @@
 package Voltogame;
 
+import java.util.Arrays;
 import java.util.Observable;
 
 public class Control extends Observable {
 
+    private View view;
     private Model model;
 
     public Control(){
-        addObserver(new View(this));
+        view = new View(this);
+        addObserver(view);
     }
 
 
@@ -16,8 +19,13 @@ public class Control extends Observable {
         {
             case "startGame":
                 System.out.println("Game Model called");
+
+                model = new Model();
+                model.addObserver(view);
                 setChanged();
                 notifyObservers(a);
+                model.start();
+
                 break;
             case "startSolver":
                 System.out.println("Solver Model called");
@@ -32,6 +40,10 @@ public class Control extends Observable {
                 break;
 
         }
+    }
+
+    public void gridButtonClicked(int[] i){
+        System.out.println("Control: " + Arrays.toString(i));
     }
 
     @Override

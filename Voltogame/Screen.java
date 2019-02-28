@@ -13,4 +13,5 @@ public abstract class Screen extends JPanel implements ActionListener {
     }
 
     protected abstract void userAction(String action);
+    protected abstract void updateData(Msg msg);
 }

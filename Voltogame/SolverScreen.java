@@ -22,6 +22,11 @@ public class SolverScreen extends Screen {
     }
 
     @Override
+    protected void updateData(Msg msg) {
+
+    }
+
+    @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == end)
         {
